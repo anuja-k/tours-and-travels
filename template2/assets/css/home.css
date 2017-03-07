@@ -1,0 +1,81 @@
+body{
+      /*background-image:url('../images/back1.jpg');
+          background-repeat: no-repeat;
+      		height: 100%;
+		width: 100%;
+*/
+}
+div.special{
+	    background:url('../images/b1.jpg');
+    background-repeat: no-repeat;
+	background-size:cover;
+	    height:550px;
+		width:100%;
+		margin-top:80px;
+     }
+div.travel{
+}
+div.book{
+	color:black;
+}
+h2.he {
+		color:#ECEFF1;
+    text-shadow: 1px 1px 2px blue;
+}
+li.sel{
+	display:inline;
+    padding:20px;
+}
+li.sell{
+	display:inline;
+    padding:30px;
+}
+li.seld{
+	display:inline;
+    padding:20px;
+}
+
+input[type=radio]{
+  	 cursor:pointer;
+	 /*border:1px solid black;
+     position: absolute;
+  visibility: hidden;*/
+
+
+}
+
+ul li.sel label{
+		color:#ECEFF1;
+	 font-size:25px;
+	 font-weight: normal;
+	 padding: 5px;
+	 cursor:pointer;
+}
+	 ul li.sell label{
+		 	color:#ECEFF1;
+	 font-size:20px;
+	 font-weight: normal;
+	 padding: 5px;
+	 cursor:pointer;
+}
+ ul li.seld label{
+	 	color:#ECEFF1;
+	 font-size:20px;
+	 font-weight: normal;
+	 padding: 15px;	
+	 color:#ECEFF1;
+
+	 cursor:pointer;
+}
+   
+
+select
+{
+	width:170px;
+	height:30px;
+}
+input[type=text]
+{
+	width:150px;
+	height:30px;
+}

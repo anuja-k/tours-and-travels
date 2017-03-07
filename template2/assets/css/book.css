@@ -1,0 +1,82 @@
+body{
+	color:black;
+	background-color:#e6f7ff  !important;
+}
+div.special{
+	    background-color: #e6f7ff  /*rgb(200,200,200)*/;
+    /*background-repeat: no-repeat;
+	background-size:cover;*/
+	    height:550px;
+		width:100%;
+		margin-top:60px;
+     }
+	 
+div.a{
+	width:auto;
+	padding:5px;
+	border-bottom:1px  black;
+}	 
+	 
+	 div.book{
+	color:black;
+}
+button.new{
+	color:black;
+	background-color:white;
+	font-weight:bold;
+}
+
+input[type=radio]{
+  	 cursor:pointer;
+	 /*border:1px solid black;
+     position: absolute;
+  visibility: hidden;*/
+
+
+}
+table{
+	background:white;
+	
+}
+th{
+	font-size:16px;
+}
+th, td {
+   padding:5px;
+    
+}
+
+
+label{
+		color:black;
+	 font-size:18px;
+	 font-weight: normal;
+	 /*padding: 5px;*/
+	 cursor:pointer;
+}
+	
+
+select
+{
+	width:170px;
+	height:30px;
+}
+input[type=text]
+{
+	width:150px;
+	height:30px;
+}
+.inform{
+	margin-top:20px;
+	text-decoration: none;
+	background-color:white;
+	width:40%;
+	text-align:center;
+	color:black;
+	padding:5px;
+	-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	font-size:16px;
+	padding:25px;
+}

@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  
+  <!-- meta -->
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+			<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no"/>
+	<title>Sign up page</title>
+
+	<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../assets/css/ionicons.min.css">
+	<link rel="stylesheet" href="../assets/css/owl.carousel.css">
+	<link rel="stylesheet" href="../assets/css/owl.theme.css">
+	<link rel="stylesheet" href="../assets/css/flexslider.css" type="text/css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+  <link type="text/css" rel="stylesheet" href="../assets/css/navigation.css">
+<script type="text/javascript">
+
+  function checkForm(form)
+  {
+   /* if(form.username.value == "") {
+      alert("Error: Username cannot be blank!");
+      form.username.focus();
+      return false;
+    }
+    re = /^\w+$/;
+    if(!re.test(form.username.value)) {
+      alert("Error: Username must contain only letters, numbers and underscores!");
+      form.username.focus();
+      return false;
+    }*/
+
+      if(form.password.value.length < 6) {
+        alert("Error: Password must contain at least six characters!");
+        form.password.focus();
+        return false;
+      }
+      /*if(form.password.value == form.username.value) {
+        alert("Error: Password must be different from Username!");
+        form.password.focus();
+        return false;
+      }*/
+      re = /[0-9]/;
+      if(!re.test(form.password.value)) {
+        alert("Error: password must contain at least one number (0-9)!");
+        form.password.focus();
+        return false;
+      }
+      re = /[a-z]/;
+      if(!re.test(form.password.value)) {
+        alert("Error: password must contain at least one lowercase letter (a-z)!");
+        form.password.focus();
+        return false;
+      }
+      re = /[A-Z]/;
+      if(!re.test(form.password.value)) {
+        alert("Error: password must contain at least one uppercase letter (A-Z)!");
+        form.password.focus();
+        return false;
+      }
+    return true;
+  }
+
+</script>
+
+</head>
+
+<body>
+ <nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+		<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="../index.php" title="HOME"><i class="ion-paper-airplane"></i> Tours <span>& Travels</span></a>
+			</div> <!-- /.navbar-header -->
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="../index.php">Home</a></li>
+					<li><a href="../about.html">about</a></li>
+					<li><a href="../services.html">services</a></li>
+					<li><a href="../contact.html">contact</a></li>
+					<li><a href="loginpage.html">Login</a></li>
+					<li class="active"><a href="signuppage.html">Sign up</a></li>
+				</ul> <!-- /.nav -->
+		    </div><!-- /.navbar-collapse -->
+	  	</div><!-- /.container -->
+	</nav>
+<br><br>
+<center>
+  <h1 style="margin-top:80px">Signup</h1>
+  <br>
+  <form name="form_signup" method="post" action="signup.php" onsubmit="return checkForm(this);">
+    FIRST NAME:
+	<input type="text" name="fname"  required><br>
+	LAST NAME:
+  <input type="text" name="lname"  required><br>
+    <!--USERNAME:
+    <input type="text"  name="username" required><br>-->
+	EMAIL:
+	<input type="email" name="email" required><br>
+	PASSWORD:
+    <input type="password"  name="password" required><br>
+	CONFIRM PASSWORD:
+	 <input type="password"  name="cpassword" required><br>
+	
+   <input type="submit" value="Sign up"/>
+  </form>
+  <br>
+  <p style="margin-left:100px"> ALREADY USER ?&nbsp&nbsp&nbsp&nbsp<a href="loginpage.html">LOGIN</a></p>
+  </center>
+</div>
+
+
+</body>
+
+</html>
